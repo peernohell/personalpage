@@ -1,0 +1,30 @@
+body {
+	background-color: #EFEFEF;
+	margin: 0;
+	padding: 0;
+}
+
+.container, .perso {
+	float: left;
+	width: 37%;
+	margin: 4%;
+	/*width: 512px;
+	height: 128px;*/
+	background:white;  #F5F5F5;
+	border: 1px solid #DEDEDE;
+	color: #606060;
+}
+
+.container p {
+	margin: 12px;
+}
+
+.perso h1, .container h1 {
+	font-size: 24px;
+}
+.perso img {
+	float: left;
+	width: 128px;
+	height: 128px;
+	margin-right: 16px;
+}
