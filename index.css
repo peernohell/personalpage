@@ -7,10 +7,15 @@ body {
 .container, .perso {
 	float: left;
 	width: 37%;
-	margin: 4%;
+	margin: 1% 4%;
 	background:white;  #F5F5F5;
 	border: 1px solid #DEDEDE;
 	color: #606060;
+	height: 128px;
+}
+
+.container.long {
+	height: 256px;
 }
 
 
