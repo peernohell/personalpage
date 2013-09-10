@@ -4,33 +4,39 @@ body {
 	padding: 0;
 }
 
-.container, .perso {
+.container {
 	float: left;
-	width: 37%;
-	margin: 4%;
+	width: 29%;
+	margin: 2%;
 	background:white;  #F5F5F5;
 	border: 1px solid #DEDEDE;
 	color: #606060;
+	height: 128px;
 }
 
-
-.container >  p, .perso > p {
+.container >  p {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
 
-.perso > h1, .container > h1 {
+.container > h1 {
 	font-size: 24px;
+	margin: 12px;
+	margin-bottom: 4px;
 }
 
-.container > h1 {
-	margin: 12px;
+.container > ul {
+	margin: 0;
+}
+
+.container.no-title > p {
+	margin: 26px;
 }
 
 .container > ul > li {
 	list-style-type: none;
 }
-.perso img {
+.container img {
 	float: left;
 	width: 128px;
 	height: 128px;
