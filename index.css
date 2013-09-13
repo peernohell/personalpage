@@ -6,9 +6,9 @@ body {
 
 .container {
 	float: left;
-	width: 29%;
-	margin: 2%;
-	background:white;  #F5F5F5;
+	width: 430px;
+	margin: 16px;
+	background:white;
 	border: 1px solid #DEDEDE;
 	color: #606060;
 	height: 128px;
@@ -17,6 +17,7 @@ body {
 .container >  p {
 	margin-top: 4px;
 	margin-bottom: 4px;
+	text-align: justify;
 }
 
 .container > h1 {
@@ -30,7 +31,7 @@ body {
 }
 
 .container.no-title > p {
-	margin: 26px;
+	margin: 16px;
 }
 
 .container > ul > li {
