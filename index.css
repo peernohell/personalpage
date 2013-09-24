@@ -43,3 +43,18 @@ body {
 	height: 128px;
 	margin-right: 16px;
 }
+
+@-webkit-keyframes moveleft {
+	from { background-position: 0px 0px}
+	30% { background-position: 0px 0px}
+	50% { background-position: 430px 0px}
+	80% { background-position: 430px 0px}
+	to { background-position: 0px 0px}
+}
+
+.images {
+	height: 248px;
+	background-image: url(photos/small.png);
+	background-position: 0 0;
+	-webkit-animation: moveleft 8s ease-in-out forwards infinite;
+}
