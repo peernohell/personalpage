@@ -1,68 +1,47 @@
 body {
 	background-color: #f2f2f2;
-	margin: 0;
-	padding: 0;
-	padding-left: 16%;
-	background-image: url(bg.png);
-	background-repeat: no-repeat;
-	background-position: top left;
-    background-attachment:fixed;
 	font-family: helvetica;
 	font-size: 13px;
+    padding: auto 0px;
+}
+
+body > div {
+    margin: 0 5%;
 }
 
 .container {
 	float: left;
-	width: 430px;
+	width: 496px;
 	margin: 16px;
 	background: #FEFEFE;
 	border: 1px solid #DEDEDE;
 	color: #606060;
-	height: 128px;
+	height: 496px;
 }
 
-.container >  p {
-	margin-top: 4px;
-	margin-left: 4px;
-	margin-bottom: 4px;
+.container >  div {
+    margin: 16px;
 	text-align: justify;
 }
 
+.info > * {
+    margin: 6px;
+    width: 40%;
+    float:left;
+}
+
+.info a {text-decoration:none; color: #606060}
+
 .container > h1 {
 	font-size: 22px;
-	margin: 12px;
-	margin-bottom: 4px;
+	margin-left: 16px;
 }
 
-.container > ul {
-	margin: 0;
-}
-
-.container.no-title > p {
-	margin: 16px;
-}
-
-.container > ul > li {
-	list-style-type: none;
-}
-.container img {
+.container > img {
 	float: left;
-	width: 128px;
-	height: 128px;
-	margin-right: 16px;
-}
-
-@-webkit-keyframes moveleft {
-	from { background-position: 0px 0px}
-	30% { background-position: 0px 0px}
-	50% { background-position: 430px 0px}
-	80% { background-position: 430px 0px}
-	to { background-position: 0px 0px}
-}
-
-.images {
-	height: 248px;
-	background-image: url(photos/small.png);
-	background-position: 0 0;
-	-webkit-animation: moveleft 8s ease-in-out forwards infinite;
+    display: block;
+	width: 496px;
+	height: 256px;
+    margin: 0px;
+    margin-bottom: 16px;
 }

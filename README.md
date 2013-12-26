@@ -1,4 +1,5 @@
-personalpage
+Restaurant
 ============
 
-My personal web page with all my information
+It's a little static webpage that contains my favorite restaurant and places in Lille
+
