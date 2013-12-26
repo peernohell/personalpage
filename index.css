@@ -1,14 +1,21 @@
 body {
-	background-color: #EFEFEF;
+	background-color: #f2f2f2;
 	margin: 0;
 	padding: 0;
+	padding-left: 16%;
+	background-image: url(bg.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+    background-attachment:fixed;
+	font-family: helvetica;
+	font-size: 13px;
 }
 
 .container {
 	float: left;
 	width: 430px;
 	margin: 16px;
-	background:white;
+	background: #FEFEFE;
 	border: 1px solid #DEDEDE;
 	color: #606060;
 	height: 128px;
@@ -16,12 +23,13 @@ body {
 
 .container >  p {
 	margin-top: 4px;
+	margin-left: 4px;
 	margin-bottom: 4px;
 	text-align: justify;
 }
 
 .container > h1 {
-	font-size: 24px;
+	font-size: 22px;
 	margin: 12px;
 	margin-bottom: 4px;
 }
