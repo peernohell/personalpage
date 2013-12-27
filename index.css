@@ -9,7 +9,7 @@ body > div {
     margin: 0 5%;
 }
 
-.container {
+.card {
 	float: left;
 	width: 496px;
 	margin: 16px;
@@ -17,9 +17,10 @@ body > div {
 	border: 1px solid #DEDEDE;
 	color: #606060;
 	height: 496px;
+	overflow: hidden;
 }
 
-.container >  div {
+.card >  div {
     margin: 16px;
 	text-align: justify;
 }
@@ -32,12 +33,12 @@ body > div {
 
 .info a {text-decoration:none; color: #606060}
 
-.container > h1 {
+.card > h1 {
 	font-size: 22px;
 	margin-left: 16px;
 }
 
-.container > img {
+.card > img {
 	float: left;
     display: block;
 	width: 496px;
@@ -45,3 +46,43 @@ body > div {
     margin: 0px;
     margin-bottom: 16px;
 }
+
+.button {
+    text-align:center;
+    margin: 4px;
+    float: right;
+    width: 35px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+body .small {
+    display: none;
+}
+body.small .small {
+    display: block;
+}
+body.small .card {
+    height: 128px;
+    padding: 0px;
+}
+
+body.small .card img {
+    width: 450px;
+}
+
+body.small h1, body.small .info {
+    display: none;
+}
+body.small .card.swipe .info {
+    display: block;
+    width: 450px;
+}
+body.small .card.swipe img {
+    display: none;
+}
+
+
+
+
