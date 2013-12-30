@@ -16,35 +16,21 @@ body > div {
 	background: #FEFEFE;
 	border: 1px solid #DEDEDE;
 	color: #606060;
-	height: 496px;
-	overflow: hidden;
-}
-
-.card >  div {
-    margin: 16px;
-	text-align: justify;
+	height: 416px;
+    overflow:hidden;
 }
 
 .info > * {
-    margin: 6px;
+    margin: 16px;
     width: 40%;
-    float:left;
+    float: left;
 }
 
 .info a {text-decoration:none; color: #606060}
 
-.card > h1 {
-	font-size: 22px;
-	margin-left: 16px;
-}
-
-.card > img {
-	float: left;
-    display: block;
-	width: 496px;
-	height: 256px;
-    margin: 0px;
-    margin-bottom: 16px;
+.card .title h1 {
+    margin: 6px;
+    float: left;
 }
 
 .button {
@@ -57,32 +43,6 @@ body > div {
     color: inherit;
 }
 
-body .small {
-    display: none;
+.card.small {
+    height: 168px;
 }
-body.small .small {
-    display: block;
-}
-body.small .card {
-    height: 128px;
-    padding: 0px;
-}
-
-body.small .card img {
-    width: 450px;
-}
-
-body.small h1, body.small .info {
-    display: none;
-}
-body.small .card.swipe .info {
-    display: block;
-    width: 450px;
-}
-body.small .card.swipe img {
-    display: none;
-}
-
-
-
-

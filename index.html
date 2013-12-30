@@ -9,15 +9,19 @@
 	<body>
         <div>
             <div class="action">
-                <div id="toggleSmall" class="fa fa-compress" onclick="toogleSmall();"></div>
+                <div id="toggleSmall" class="fa fa-expand" onclick="toogleSmall();"></div>
             </div>
-            <article class="card">
-                <img alt="photo" src="photos/chantecler.jpg" />
-                <a class="small button fa fa-phone fa-2x" href="0320574819">&nbsp;</a>
-                <a class="small button fa fa-map-marker fa-2x" href="//maps.google.com/?q=22%20Rue%20Nicolas%20Leblanc,%2059000%20Lille">&nbsp;</a>
-                <a class="small button fa fa-bars fa-2x" onclick="swipe(this)" href="#">&nbsp;</a>
-                <h1 class="fa fa-cutlery"> Le Chantecler</h1>
-                <div class="info">
+            <article class="card small">
+                <div class="title">
+                    <h1 class="fa fa-cutlery"> Le Chantecler</h1>
+                    <a class="small button fa fa-bars fa-2x" onclick="swipe(this)" href="#">&nbsp;</a>
+                    <a class="small button fa fa-map-marker fa-2x" href="//maps.google.com/?q=22%20Rue%20Nicolas%20Leblanc,%2059000%20Lille">&nbsp;</a>
+                    <a class="small button fa fa-phone fa-2x" href="0320574819">&nbsp;</a>
+                </div>
+                <div class="img clear">
+                    <img alt="photo" src="photos/chantecler.jpg" />
+                </div>
+                <div class="info clear">
                     <address>
                         <p class="fa fa-phone"> <a href="0320574819">03 20 57 48 19</a></p>
                         <p class="fa fa-map-marker"> <a href="//maps.google.com/?q=22%20Rue%20Nicolas%20Leblanc,%2059000%20Lille" target="_blank">22 Rue Nicolas Leblanc, 59000 Lille</a></p>
@@ -34,19 +38,20 @@
                     </span>
                 </div>
             </article>
-            <article class="card">
-                <img alt="photo" src="photos/dandy.jpg" />
-                <a class="small button fa fa-phone fa-2x" href="0320515001">&nbsp;</a>
-                <a class="small button fa fa-map-marker fa-2x" href="//maps.google.com/?q=67%20rue%20basse,%20Lille">&nbsp;</a>
-                <a class="small button fa fa-bars fa-2x" onclick="swipe(this)" href="#">&nbsp;</a>
-                <h1 class="fa fa-glass"> Le Dandy</h1>
+            <article class="card small">
+                <div class="title clear">
+                   <h1 class="fa fa-glass"> Le Dandy</h1>
+                    <a class="small button fa fa-bars fa-2x" onclick="swipe(this)" href="#">&nbsp;</a>
+                     
+                    <a class="small button fa fa-map-marker fa-2x" href="//maps.google.com/?q=67%20rue%20basse,%20Lille">&nbsp;</a>
+                     <a class="small button fa fa-phone fa-2x" href="0320515001">&nbsp;</a>
+                </div>
+                <div class="img"><img alt="photo" src="photos/dandy.jpg" /></div>
                 <div class="info">
                     <address>
                         <p class="fa fa-phone"> <a href="0320515001">03 20 51 50 01</a></p>
                         <p class="fa fa-map-marker"><a href="//maps.google.com/?q=67%20rue%20basse,%20Lille" target="_blank"> 67 rue basse, Lille</a></p>
                     </address>
-                    <div>
-                    </div>
                     <span>Ouverture: Inconnue pour le moment.
                     </span>
                 </div>
@@ -55,14 +60,17 @@
         </div>
         <script type="application/javascript">
         function toogleSmall() {
-            document.body.classList.toggle('small');
             var toggleButton = document.getElementById('toggleSmall');
             toggleButton.classList.toggle('fa-compress');
             toggleButton.classList.toggle('fa-expand');
+            
+            Array.prototype.forEach.call(document.querySelectorAll('article'), function (el) {
+                el.classList.toggle('small');
+            });
         }
 
         function swipe(el) {
-            el.parentNode.classList.toggle('swipe');
+            el.parentNode.parentNode.classList.toggle('small');
         }
         </script>
 	</body>
