@@ -1,0 +1,25 @@
+{
+  "name": "restaurant",
+  "version": "0.0.0",
+  "description": "package to compile a static page with my favorite restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/peernohell/personalpage.git"
+  },
+  "keywords": [
+    "static",
+    "website"
+  ],
+  "author": "francois.lecroart",
+  "license": "BSD",
+  "gitHead": "d37d0de18e308480db98f6310b1e29d3bc73b5bb",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "jade": "~1.0.2",
+    "js-yaml": "~3.0.1"
+  }
+}

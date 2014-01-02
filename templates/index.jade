@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Mes endroits préféré à Lille
+    meta(charset="utf-8")
+    link(type="text/css", rel="stylesheet", href="css/font-awesome.css")
+    link(type="text/css", rel="stylesheet", href="index.css")
+
+  body
+    div
+      each restaurant, index in restaurants
+          include ./restaurant.jade
+            
+    script(type="application/javascript").
+        function expend(el) {
+            el.parentNode.parentNode.classList.toggle('small');
+        }
+

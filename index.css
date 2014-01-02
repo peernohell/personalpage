@@ -6,19 +6,20 @@ body {
 }
 
 body > div {
-    margin: 0 5%;
+    margin: 0 16px;
 }
 
 .card {
-	float: left;
-	width: 496px;
-	margin: 16px;
-	background: #FEFEFE;
+    width: 100%;
+    background: #FEFEFE;
 	border: 1px solid #DEDEDE;
 	color: #606060;
 	height: 416px;
     overflow:hidden;
+    margin-bottom: 16px;
 }
+
+.card img {width: 100%}
 
 .info > * {
     margin: 16px;

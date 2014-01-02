@@ -1,0 +1,17 @@
+- icon: fa-cutlery
+  title: Le chantecler
+  photo: chantecler
+  tel: 0320574819
+  address: 22 Rue Nicolas Leblanc, 59000 Lille
+  ouvertures: [Midi Mardi au Vendredi, Soir Mardi au Samedi]
+- icon: fa-glass
+  title: Le dandy
+  photo: dandy
+  tel: 0320515001
+  address: 67 rue basse, Lille
+- icon: fa-cutlery
+  title: La cour des vignes
+  photo: cour_des_vignes
+  tel: 0320549727
+  address: 21, bd J.B. Lebas 59000 Lille
+  ouvertures: [Fermé le mercredi\,le samedi midi et le dimanche soir, Le dimanche de 11h à 16h formule brunch.,]

@@ -1,0 +1,22 @@
+article(class="card small")
+  div(class="title clear")
+    h1(class="fa "+ restaurant.icon)= " " + restaurant.title
+    a(class="small button fa fa-bars fa-2x", onclick="expend(this)", href="#") &nbsp;
+    a(class="small button fa fa-map-marker fa-2x", href="//maps.google.com/?q=" + restaurant.address) &nbsp;
+    a(class="small button fa fa-phone fa-2x" href=restaurant.tel) &nbsp;    
+
+  div(class="img clear")
+    img(alt="photo" src="photos/" + restaurant.photo + ".jpg")
+
+  div(class="info clear")
+    address
+      p(class="fa fa-phone")
+        a(href=restaurant.tel)= " " + restaurant.tel
+      br
+      p(class="fa fa-map-marker")
+        a(href="//maps.google.com/?q=" + restaurant.address, target="_blank")= " " + restaurant.address
+    if restaurant.ouvertures
+      span Ouverture:
+        ul
+          each ouverture in restaurant.ouvertures
+            li= ouverture
