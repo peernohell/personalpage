@@ -9,9 +9,35 @@
   photo: dandy
   tel: 0320515001
   address: 67 rue basse, Lille
+  ouvertures: [Lundi au samedi]
 - icon: fa-cutlery
   title: La cour des vignes
   photo: cour_des_vignes
   tel: 0320549727
   address: 21, bd J.B. Lebas 59000 Lille
   ouvertures: [Fermé le mercredi le samedi midi et le dimanche soir, Le dimanche de 11h à 16h formule brunch.]
+- icon: fa-cutlery
+  title: Le Stromboli
+  photo: stromboli
+  tel: 0320579001
+  address: 3, place phillipe lebon 59000 Lille
+  ouvertures: [Midi Lundi au Samedi, Soir Jeudi au Samedi]
+- icon: fa-cutlery
+  title: La petite Flanbée
+  photo: petite_flanbee 
+  tel: 0320556434
+  address: 4 Rue du Cure Saint-Étienne, 59800 Lille
+  ouvertures: [Mardi au Samedi midi et soir]
+- icon: fa-cutlery
+  title: Quattro Mori
+  photo: quattro_mori
+  tel: 0320872801
+  address: 208 Bis Rue de Solférino 59000 Lille
+  ouvertures: [Lundi au Samedi midi et soir]
+- icon: fa-cutlery
+  title: Les Domaines Qui Montent
+  photo: domaines_qui_montent
+  tel: 0967038647
+  address: 96 rue de l'Hopital Militaire 59000 LILLE
+  ouvertures: [inconnue]
+
