@@ -2,24 +2,24 @@ body {
 	background-color: #f2f2f2;
 	font-family: helvetica;
 	font-size: 13px;
-    padding: auto 0px;
+    padding: auto 0;
 }
 
 body > div {
     margin: 0 16px;
+    color: #606060;
 }
 
-.card {
+article {
     width: 100%;
     background: #FEFEFE;
 	border: 1px solid #DEDEDE;
-	color: #606060;
 	height: 416px;
     overflow:hidden;
     margin-bottom: 16px;
 }
 
-.card img {width: 100%}
+article img {width: 100%}
 
 .info > * {
     margin: 16px;
@@ -29,21 +29,38 @@ body > div {
 
 .info a {text-decoration:none; color: #606060}
 
-.card .title h1 {
-    margin: 6px;
+article .title h1 {
+    font-size: 16px;
     float: left;
+    margin:.83em; 
 }
 
 .button {
+    margin: .83em .3em;
     text-align:center;
-    margin: 4px;
     float: right;
-    width: 35px;
     display: block;
     text-decoration: none;
     color: inherit;
 }
 
-.card.small {
+article.small {
     height: 168px;
+}
+
+.hidden {display: none}
+
+input#search {
+  width: 100%;
+  padding: .1em 0;
+  border: .1em solid #DEDEDE;
+  font-size: 1.4em;
+}
+form#form {
+  margin-bottom: 16px;
+}
+form#form submit {
+  position: absolute;
+  top: 1.3em;
+  right: 2.2em;
 }

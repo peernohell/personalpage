@@ -3,16 +3,45 @@ html
   head
     title Mes endroits préféré à Lille
     meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
     link(type="text/css", rel="stylesheet", href="css/font-awesome.css")
     link(type="text/css", rel="stylesheet", href="index.css")
 
   body
     div
+      form#form
+        input#search
+        submit.fa.fa-search
       each restaurant, index in restaurants
           include ./restaurant.jade
             
     script(type="application/javascript").
+        var searchEl = document.getElementById('search');
+        
         function expend(el) {
             el.parentNode.parentNode.classList.toggle('small');
         }
-
+        
+        function filterCard(card) {
+          var show = this.test(card.querySelector('h1').textContent);
+          card.classList[show ? 'remove' : 'add']('hidden');
+        }
+        
+        function showCard(card) {
+          card.classList.remove('hidden');
+        }
+        
+        function search (text) {
+          if (!text)
+            Array.prototype.forEach.call(document.querySelectorAll('article'), showCard);
+          else 
+            Array.prototype.forEach.call(document.querySelectorAll('article'), filterCard.bind(new RegExp(text, 'i')));
+        }
+        
+        function searchOnSubmit () {
+          search(searchEl.value);
+          return false;
+        }
+        
+        document.getElementById('form').onsubmit = searchOnSubmit;
+        document.querySelector('#form submit').onclick = searchOnSubmit;

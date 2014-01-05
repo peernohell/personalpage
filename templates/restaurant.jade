@@ -1,9 +1,9 @@
-article(class="card small")
+article(class="small")
   div(class="title clear")
-    h1(class="fa "+ restaurant.icon)= " " + restaurant.title
-    a(class="small button fa fa-bars fa-2x", onclick="expend(this)", href="#") &nbsp;
-    a(class="small button fa fa-map-marker fa-2x", href="//maps.google.com/?q=" + restaurant.address) &nbsp;
-    a(class="small button fa fa-phone fa-2x" href=restaurant.tel) &nbsp;    
+    h1(class="fa fa-lg "+ restaurant.icon)= " " + restaurant.title
+    a(class="small button fa fa-bars fa-lg", onclick="expend(this)", href="#") &nbsp;
+    a(class="small button fa fa-map-marker fa-lg", href="//maps.google.com/?q=" + restaurant.address) &nbsp;
+    a(class="small button fa fa-phone fa-lg" href="tel:" + restaurant.tel) &nbsp;    
 
   div(class="img clear")
     img(alt="photo" src="photos/" + restaurant.photo + ".jpg")
