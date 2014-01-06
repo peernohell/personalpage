@@ -22,7 +22,7 @@ article {
 article img {width: 100%}
 
 .info > * {
-    margin: 16px;
+    margin: .83em;
     width: 40%;
     float: left;
 }
@@ -32,7 +32,7 @@ article img {width: 100%}
 article .title h1 {
     font-size: 16px;
     float: left;
-    margin:.83em; 
+    margin:.83em;
 }
 
 .button {
