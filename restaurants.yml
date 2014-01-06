@@ -38,6 +38,12 @@
   title: Les Domaines Qui Montent
   photo: domaines_qui_montent
   tel: 0967038647
-  address: 96 rue de l'Hopital Militaire 59000 LILLE
+  address: 96 rue de l%27Hopital Militaire 59000 LILLE
   ouvertures: [inconnue]
+- icon: fa-cutlery
+  title: Delassic frères
+  photo: delassic
+  tel: 0328523288
+  address: 11 place des Patiniers à Lille
+  ouvertures: [Mardi au Vendredi :10-21h, Samedi: 10-19:30h]
 
