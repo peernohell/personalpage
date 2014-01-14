@@ -13,9 +13,25 @@ article(class="small")
         a(href=restaurant.tel)= " " + restaurant.tel
       br
       p(class="fa fa-map-marker")
-        a(href="//maps.google.com/?q=" + restaurant.address, target="_blank")= " " + restaurant.address
-    if restaurant.ouvertures
-      span Ouverture:
-        ul
-          each ouverture in restaurant.ouvertures
-            li= ouverture
+        a(href="//maps.google.com/?q=" + restaurant.address, target="_blank")!= " " + restaurant.address
+    if restaurant.soir || restaurant.midi
+      table.open
+        tr
+          th
+          th Lu
+          th Ma
+          th Me
+          th Je
+          th Ve
+          th Sa
+          th Di
+        if restaurant.soir
+          tr
+            th.fa.fa-moon-o
+             -for (var j=0; j < 7; j++)
+               td(class= restaurant.soir.indexOf(j) !== -1 ? 'open' : '')
+        if restaurant.midi
+          tr
+            th.fa.fa-sun-o
+             -for (var j=0; j < 7; j++)
+               td(class= restaurant.midi.indexOf(j) !== -1 ? 'open' : '')

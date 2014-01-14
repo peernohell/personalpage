@@ -3,47 +3,53 @@
   photo: chantecler
   tel: 0320574819
   address: 22 Rue Nicolas Leblanc, 59000 Lille
-  ouvertures: [Midi Mardi au Vendredi, Soir Mardi au Samedi]
+  midi: [1, 2, 3, 4]
+  soir: [1, 2, 3, 4, 5]
 - icon: fa-glass
   title: Le dandy
   photo: dandy
   tel: 0320515001
   address: 67 rue basse, Lille
-  ouvertures: [Lundi au samedi]
+  midi: [0, 1, 2, 3, 4, 5]
+  soir: [0, 1, 2, 3, 4, 5]
 - icon: fa-cutlery
   title: La cour des vignes
   photo: cour_des_vignes
   tel: 0320549727
   address: 21, bd J.B. Lebas 59000 Lille
-  ouvertures: [Fermé le mercredi le samedi midi et le dimanche soir, Le dimanche de 11h à 16h formule brunch.]
+  midi: [0, 1, 3, 4, 6]
+  soir: [0, 1, 3, 4, 5]
 - icon: fa-cutlery
   title: Le Stromboli
   photo: stromboli
   tel: 0320579001
   address: 3, place phillipe lebon 59000 Lille
-  ouvertures: [Midi Lundi au Samedi, Soir Jeudi au Samedi]
+  midi: [0, 1, 2, 3, 4, 5]
+  soir: [3, 4, 5]
 - icon: fa-cutlery
   title: La petite Flanbée
-  photo: petite_flanbee 
+  photo: petite_flanbee
   tel: 0320556434
   address: 4 Rue du Cure Saint-Étienne, 59800 Lille
-  ouvertures: [Mardi au Samedi midi et soir]
+  midi: [1, 2, 3, 4, 5]
+  soir: [1, 2, 3, 4, 5]
 - icon: fa-cutlery
   title: Quattro Mori
   photo: quattro_mori
   tel: 0320872801
   address: 208 Bis Rue de Solférino 59000 Lille
-  ouvertures: [Lundi au Samedi midi et soir]
+  midi: [0, 1, 3, 4, 6]
+  soir: [0, 1, 3, 4, 5]
 - icon: fa-cutlery
   title: Les Domaines Qui Montent
   photo: domaines_qui_montent
   tel: 0967038647
-  address: 96 rue de l%27Hopital Militaire 59000 LILLE
-  ouvertures: [inconnue]
+  address: 96 rue de l&#39;Hopital Militaire 59000 LILLE
+  midi: [0, 1, 2, 3, 4, 5]
 - icon: fa-cutlery
   title: Delassic frères
   photo: delassic
   tel: 0328523288
   address: 11 place des Patiniers à Lille
-  ouvertures: [Mardi au Vendredi :10-21h, Samedi: 10-19:30h]
-
+  midi: [1, 2, 3, 4, 5]
+  soir: [1, 2, 3, 4]

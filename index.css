@@ -2,65 +2,103 @@ body {
 	background-color: #f2f2f2;
 	font-family: helvetica;
 	font-size: 13px;
-    padding: auto 0;
+	padding: auto 0;
+	color: #606060;
 }
+
+a, a:hover, a:visited {text-decoration:none; color: #606060}
 
 body > div {
-    margin: 0 16px;
-    color: #606060;
+	margin: 0 16px;
 }
 
+/* search form */
+form#form {
+	margin-bottom: 16px;
+}
+
+form#form submit {
+	position: absolute;
+	top: 1.3em;
+	right: 2.2em;
+}
+
+form#form input#search {
+	width: 100%;
+	padding: .1em 0;
+	border: .1em solid #DEDEDE;
+	font-size: 1.4em;
+}
+
+
+/* article */
 article {
-    width: 100%;
-    background: #FEFEFE;
+	width: 100%;
+	background: #FEFEFE;
 	border: 1px solid #DEDEDE;
-	height: 416px;
-    overflow:hidden;
-    margin-bottom: 16px;
+	height: 316px;
+	overflow:hidden;
+	margin-bottom: 16px;
 }
 
-article img {width: 100%}
-
-.info > * {
-    margin: .83em;
-    width: 40%;
-    float: left;
-}
-
-.info a {text-decoration:none; color: #606060}
-
-article .title h1 {
-    font-size: 16px;
-    float: left;
-    margin:.83em;
-}
-
-.button {
-    margin: .83em .3em;
-    text-align:center;
-    float: right;
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
 
 article.small {
-    height: 168px;
+	height: 168px;
+}
+/* title */
+article .title {
+	height: 42px;
 }
 
-.hidden {display: none}
+article .title h1 {
+	font-size: 16px;
+	float: left;
+	margin:.83em;
+}
 
-input#search {
-  width: 100%;
-  padding: .1em 0;
-  border: .1em solid #DEDEDE;
-  font-size: 1.4em;
+article .title .button {
+	margin: .83em .3em;
+	text-align:center;
+	float: right;
+	display: block;
+	text-decoration: none;
+	color: inherit;
 }
-form#form {
-  margin-bottom: 16px;
+
+/* image */
+article img {
+	width: 100%;
 }
-form#form submit {
-  position: absolute;
-  top: 1.3em;
-  right: 2.2em;
+article .img {
+	overflow: hidden;
+	height: 196px;
+}
+
+/* information */
+article address {
+	float: left;
+	width: 42%;
+}
+
+article address p {
+	margin: .42em;
+}
+
+/** opening table */
+table.open {
+	width: 42%
+	border-spacing: 0;
+	float: right;
+}
+table.open th, table.open td {
+	background: white;
+}
+table.open th {
+	font-size: .83em;
+}
+table.open td {
+	background: #DEDEDE;
+}
+table.open td.open {
+	background: green;
 }
